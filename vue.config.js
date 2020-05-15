@@ -13,6 +13,8 @@ module.exports = {
       filename: "index.html"
     }
   },
+  // 不提取 CSS
+  css: { extract: false },
   publicPath: "./",
   assetsDir: "static",
   outputDir: "dist",
@@ -41,18 +43,18 @@ module.exports = {
         symbolId: "icon-[name]"
       })
       .end();
-    config.module
-      .rule("js")
-      .include.add("/packages")
-      .end()
-      .use("babel")
-      .loader("babel-loader")
-      .tap(options => {
-        // 修改它的选项...
-        return options;
-      });
+    // config.module
+    //   .rule("js")
+    //   .include.add("/packages")
+    //   .end()
+    //   .use("babel")
+    //   .loader("babel-loader")
+    //   .tap(options => {
+    //     // 修改它的选项...
+    //     return options;
+    //   });
   },
   devServer: {
-    port: 7001
+    port: 9877
   }
 };

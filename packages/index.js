@@ -1,4 +1,4 @@
-// 导入颜色选择器组件
+// 导入 ZeroIcon 组件
 import ZeroIcon from "./zero-icon";
 
 // 存储组件列表

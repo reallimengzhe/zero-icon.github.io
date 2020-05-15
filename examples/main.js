@@ -3,9 +3,11 @@ import App from "./App.vue";
 
 Vue.config.productionTip = false;
 
+//
+import "./styles/index.scss";
+
 // 导入组件库
 import ZeroIcon from "./../packages";
-
 // 注册组件库
 Vue.use(ZeroIcon);
 
