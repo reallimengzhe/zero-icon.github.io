@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<title>home-icon-nav-message@2x</title>
+<desc>Created with Sketch.</desc>
+<g id="导航">
+	<g id="导航栏" transform="translate(-1690.000000, -20.000000)">
+		<g id="home-icon-nav-message" transform="translate(1690.000000, 20.000000)">
+			<path id="message_icon" d="M100,15c4.9,0,8.9,4,8.9,8.9l0,9.6c30.3,4.3,53.7,30.4,53.7,62v58.2h2.2c3.7,0,6.7,3,6.7,6.7
+				c0,3.7-3,6.7-6.7,6.7l-49.4,0c0.1,0.7,0.2,1.5,0.2,2.2c0,8.6-7,15.7-15.7,15.7h-4.5c-8.6,0-15.7-7-15.7-15.7
+				c0-0.8,0.1-1.5,0.2-2.2l-44.9,0c-3.7,0-6.7-3-6.7-6.7c0-3.7,3-6.7,6.7-6.7h2.2V95.5c0-31.6,23.3-57.7,53.7-62l0-9.6
+				C91.1,19,95.1,15,100,15z M100,46.3c-26.5,0-48.1,21-49.2,47.2l0,2v58.2h98.4V95.5C149.2,68.3,127.2,46.3,100,46.3z"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,40 +1,26 @@
 <template>
-  <div id="app">
-    <AppNav />
-    <div class="app-header">
-      <h2>简单易用的 VUE 图标组件</h2>
-      <p>Zero Icon 为设计师和开发人员精心设计。是一个既包含中性风格，又包含针对产品专门设计的图标库。</p>
-    </div>
-    <span>示例：</span>
-    <!-- <ZeroIcon icon="message" />
-    <zero-icon icon="book" /> -->
+  <div id="app" class="app">
+    <app-nav />
+    <app-banner />
+    <app-container />
   </div>
 </template>
 
 <script>
+import AppNav from "@/layout/app-nav";
+import AppBanner from "@/layout/app-banner";
+import AppContainer from "@/layout/app-container";
 export default {
   name: "App",
   components: {
-    AppNav: () => import("@/layout/AppNav")
+    AppNav,
+    AppBanner,
+    AppContainer
   }
 };
 </script>
-<style lang="scss">
-#app {
-  width: 100vw;
-  height: 100vh;
-}
+<style lang="less">
 .app {
-  &-header {
-    padding: 80px 0;
-    background-color: #f2f6fc;
-    h2,
-    p {
-      text-align: center;
-    }
-    h2{
-      margin-bottom: 20px;
-    }
-  }
+  width: 100%;
 }
 </style>

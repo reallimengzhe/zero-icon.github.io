@@ -13,8 +13,20 @@ module.exports = {
       filename: "index.html"
     }
   },
-  // 不提取 CSS
-  css: { extract: false },
+  css: {
+    // 不提取 CSS
+    extract: false,
+    loaderOptions: {
+      less: {
+        lessOptions: {
+          modifyVars: {
+            "primary-color": "#000000"
+          },
+          javascriptEnabled: true
+        }
+      }
+    }
+  },
   publicPath: "./",
   assetsDir: "static",
   outputDir: "dist",

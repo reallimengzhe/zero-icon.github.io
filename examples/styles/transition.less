@@ -1,0 +1,45 @@
+@import "./variables.less";
+
+// 垂直进入
+.fade-in-vertical-enter-active,
+.fade-in-vertical-leave-active {
+  transition: @--transition-primary;
+}
+.fade-in-vertical-enter,
+.fade-in-vertical-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+// 侧边进入
+.fade-in-side-leave-active,
+.fade-in-side-enter-active {
+  transition: @--transition-primary;
+}
+.fade-in-side-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-in-side-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+// 缩放进入
+.scale-in-center-leave-active,
+.scale-in-center-enter-active {
+  transition: @--transition-primary;
+}
+.scale-in-center-enter {
+  opacity: 0;
+  transform: scale(0);
+}
+.scale-in-center-leave-to {
+  opacity: 0;
+  transform: scale(1);
+}
+
+//
+.flip-list-move {
+  transition: transform 0.5s;
+}

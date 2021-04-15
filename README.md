@@ -1,20 +1,15 @@
 ## Install
 
-```
-npm i zero-icon
+```sh
+nrm add supwisdom http://npm-repo.dice.supwisdom.com/repository/supwisdom-component/
+nrm use supwisdom
+npm i sw-icon
 ```
 
 ## Quick Start
 
 ```javascript
 import Vue from "vue";
-import ZeroIcon from "zero-icon";
-Vue.use(ZeroIcon);
+import SwIcon from "sw-icon";
+Vue.use(SwIcon);
 ```
-
-## LICENSE
-
-[MIT](LICENSE)
-
-<!-- ### Customize configuration -->
-<!-- See [Configuration Reference](https://cli.vuejs.org/config/). -->
