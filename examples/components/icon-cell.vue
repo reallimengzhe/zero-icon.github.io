@@ -1,7 +1,7 @@
 <template>
   <div class="icon-cell" @click="visible = true">
     <h1 class="icon-cell-icon">
-      <sw-icon :icon="name" id="icon" />
+      <zero-icon :icon="name" id="icon" />
     </h1>
     <h5 class="icon-cell-name">{{ name }}</h5>
     <a-modal
@@ -14,12 +14,12 @@
       :header="null"
     >
       <div class="icon-dialog-display">
-        <sw-icon :icon="name" />
+        <zero-icon :icon="name" />
       </div>
       <div class="icon-dialog-details">
         <h4 class="icon-dialog-details-title">
           <span>关键词：{{ tag.join("、") }}</span>
-          <!-- <sw-icon icon="add-circle-filled"></sw-icon> -->
+          <!-- <zero-icon icon="add-circle-filled"></zero-icon> -->
         </h4>
         <div class="icon-dialog-details-code">
           <a-input v-model="iconCode" ref="code" />
@@ -28,11 +28,11 @@
           <a-button type="primary" @click="handleCopy">复制代码</a-button>
           <span style="flex: 1"></span>
           <a-button disabled>
-            <sw-icon icon="download"></sw-icon>
+            <zero-icon icon="download"></zero-icon>
             <span>下载 PNG</span>
           </a-button>
           <a-button type="primary" @click="handleDownloadSvg">
-            <sw-icon icon="download"></sw-icon>
+            <zero-icon icon="download"></zero-icon>
             <span>下载 SVG</span>
           </a-button>
         </div>
@@ -53,14 +53,14 @@ export default {
     };
   },
   created() {
-    this.iconCode = `<sw-icon icon="${this.name}" />`;
+    this.iconCode = `<zero-icon icon="${this.name}" />`;
   },
   methods: {
     // copy html element
     handleCopy() {
       this.$refs.code.$refs.input.select();
       document.execCommand("Copy");
-      this.$message.success(`复制了以下内容：<sw-icon icon="${this.name}" />`);
+      this.$message.success(`复制了以下内容：<zero-icon icon="${this.name}" />`);
     },
     // download svg
     handleDownloadSvg() {
@@ -161,7 +161,7 @@ export default {
         &:not(:last-child) {
           margin-right: 10px;
         }
-        .sw-icon {
+        .zero-icon {
           margin-right: 5px;
         }
       }

@@ -1,14 +1,14 @@
 {
-  "name": "sw-icon",
+  "name": "zero-icon",
   "version": "0.3.7",
   "description": "an icon compoment",
-  "main": "lib/sw-icon.umd.min.js",
+  "main": "lib/zero-icon.umd.min.js",
   "author": "limengzhe@tom.com",
   "private": false,
   "peerDependencies": {
     "vue": "^2.6.11"
   },
-  "homepage": "http://icon.dice.supwisdom.com",
+  "homepage": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/reallimengzhe/zero-icon.git"
@@ -19,14 +19,11 @@
     "icon library",
     "icon pack"
   ],
-  "publishConfig": {
-    "registry": "http://npm-repo.dice.supwisdom.com/repository/sw-icon/"
-  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name sw-icon --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name zero-icon --dest lib packages/index.js"
   },
   "dependencies": {
     "ant-design-vue": "^1.6.2",

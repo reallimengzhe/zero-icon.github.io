@@ -1,19 +1,19 @@
 <template>
-  <svg class="sw-icon">
+  <svg class="zero-icon">
     <use :href="'#icon-' + icon" />
   </svg>
 </template>
 
 <script>
 export default {
-  name: "SwIcon",
+  name: "ZeroIcon",
   props: {
     icon: { type: String, required: true }
   }
 };
 </script> 
 <style lang="less">
-.sw-icon {
+.zero-icon {
   width: 1em;
   height: 1em;
   overflow: hidden;

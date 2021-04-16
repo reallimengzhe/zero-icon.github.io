@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      code: `<sw-icon icon="icon" />`
+      code: `<zero-icon icon="icon" />`
     };
   }
 };

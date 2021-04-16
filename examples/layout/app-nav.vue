@@ -1,7 +1,7 @@
 <template>
   <nav class="app-nav">
     <div class="app-nav-logo">
-      <sw-icon icon="supwisdom" />
+      <zero-icon icon="supwisdom" />
     </div>
     <h2 class="app-nav-title">树维图标库</h2>
     <a-tag>{{ version }}</a-tag>
@@ -23,22 +23,14 @@
     >
       <a-timeline>
         <a-timeline-item>
-          <h4>添加树维组件库私有源</h4>
-          <a-tag>nrm add sw http://npm-repo.dice.supwisdom.com/repository/supwisdom-component/</a-tag>
-        </a-timeline-item>
-        <a-timeline-item>
-          <h4>切换到树维组件库私有源</h4>
-          <a-tag>nrm use sw</a-tag>
-        </a-timeline-item>
-        <a-timeline-item>
           <h4>安装</h4>
-          <a-tag>npm i sw-icon</a-tag>
+          <a-tag>npm i zero-icon</a-tag>
         </a-timeline-item>
         <a-timeline-item>
           <h4>在 main.js 引用</h4>
-          <a-tag style="margin-bottom: 10px;">import SwIcon from 'sw-icon'</a-tag>
+          <a-tag style="margin-bottom: 10px;">import ZeroIcon from 'zero-icon'</a-tag>
           <br />
-          <a-tag>Vue.use(SwIcon)</a-tag>
+          <a-tag>Vue.use(ZeroIcon)</a-tag>
         </a-timeline-item>
         <a-timeline-item>
           <h4>在页面中使用</h4>
@@ -59,7 +51,7 @@ export default {
       // 使用方法
       visible: false,
       // 使用方法
-      test: `<sw-icon icon="add" />`,
+      test: `<zero-icon icon="add" />`,
     };
   },
   methods: {

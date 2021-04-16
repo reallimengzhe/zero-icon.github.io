@@ -29,7 +29,7 @@ module.exports = {
   },
   publicPath: "./",
   assetsDir: "static",
-  outputDir: "dist",
+  outputDir: "docs",
   productionSourceMap: false,
   configureWebpack: {
     resolve: {

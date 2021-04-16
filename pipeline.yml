@@ -7,21 +7,21 @@ stages:
             depth: 1
   - stage:
       - buildpack:
-          alias: sw-icon
+          alias: zero-icon
           params:
             bp_repo: ((bp.repo.prefix))/dice-bpack-termspa.git
             bp_args:
               PUBLIC_DIR: dist
             context: ${repo}
             modules:
-              - name: sw-icon
+              - name: zero-icon
                 path: .
   - stage:
       - release:
           params:
             dice_yml: ${repo}/dice.yml
             replacement_images:
-              - ${sw-icon}/pack-result
+              - ${zero-icon}/pack-result
   - stage:
       - dice:
           alias: deploy
