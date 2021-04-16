@@ -1,7 +1,7 @@
 <template>
   <div class="app-banner">
-    <h2>体量丰富、简单易用的图标库和图标组件</h2>
-    <p>树维图标库为树维设计师和开发人员而设计，是一个既包含中性风格，又包含产品个性化风格的图标库。</p>
+    <h2>中性风格 简单易用</h2>
+    <p>{{ description }}</p>
   </div>
 </template>
 
@@ -9,16 +9,17 @@
 export default {
   data() {
     return {
-      code: `<zero-icon icon="icon" />`
+      description: "Zero Icon 为所有设计师和开发者而设计。免费、开源。",
     };
-  }
+  },
 };
 </script>
 
 <style lang="less">
+@import "@/styles/variables";
 .app-banner {
-  padding: 80px 0;
-  background-color: #f2f6fc;
+  padding: 80px 5vw;
+  background-color: @--color-background-base;
   h2,
   p {
     text-align: center;
@@ -28,7 +29,7 @@ export default {
     // font-family: Menlo, Monaco, Consolas, Courier, monospace;
   }
   p {
-    color: #999;
+    color: @--color-text-placeholder;
   }
 }
 </style>

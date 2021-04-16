@@ -1,9 +1,9 @@
 <template>
   <nav class="app-nav">
     <div class="app-nav-logo">
-      <zero-icon icon="supwisdom" />
+      <zero-icon icon="zero-icon" />
     </div>
-    <h2 class="app-nav-title">树维图标库</h2>
+    <h2 class="app-nav-title">Zero Icon</h2>
     <a-tag>{{ version }}</a-tag>
     <div style="flex: 1;"></div>
     <a-button type="primary" class="app-nav-button" @click="visible = true">开始使用</a-button>
